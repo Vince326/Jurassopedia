@@ -10,6 +10,10 @@ import Foundation
 class Predators {
     var apexPreadators : [ApexPredator] = []
     
+    init() {
+        decodePredatorData()
+    }
+    
     func decodePredatorData() {
         if let url = Bundle.main.url(forResource: "jpapexpredators", withExtension: "json") {
             do {
